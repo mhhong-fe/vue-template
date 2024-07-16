@@ -1,15 +1,16 @@
 {
   "name": "vite-demo",
+  "type": "module",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "vite --host",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
@@ -20,20 +21,21 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.27.0",
+    "@antfu/eslint-config": "^2.22.3",
+    "@eslint/js": "^9.6.0",
     "@tsconfig/node20": "^20.1.4",
     "@types/node": "^20.12.5",
-    "@umeng/eslint-config-vue3": "0.1.5",
     "@unocss/preset-rem-to-px": "^0.59.4",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/tsconfig": "^0.5.1",
-    "eslint": "^8.44.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint": "~9.6.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "globals": "^15.8.0",
     "npm-run-all2": "^6.1.2",
     "prettier": "^2.8.8",
     "sass": "^1.75.0",
     "typescript": "~5.4.0",
+    "typescript-eslint": "^7.15.0",
     "unocss": "^0.59.3",
     "unplugin-auto-import": "^0.17.5",
     "unplugin-vue-components": "^0.26.0",
