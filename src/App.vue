@@ -1,9 +1,3 @@
-<script setup lang="ts">
-function handleClick() {
-    ElMessage.success('Hello World')
-}
-</script>
-
 <template>
     <div class="flex w-100vw h-100vh justify-center items-center flex-col">
         <div :class="$style.header">
@@ -19,6 +13,12 @@ function handleClick() {
         <RouterView />
     </div>
 </template>
+
+<script setup lang="ts">
+function handleClick() {
+    ElMessage.success('Hello World')
+}
+</script>
 
 <style module lang="scss">
 .header {

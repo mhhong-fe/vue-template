@@ -1,7 +1,11 @@
-<script setup lang="ts"></script>
-
 <template>
-    <el-input class="mt-2" />
+    <div />
 </template>
 
-<style scoped></style>
+<script setup lang="ts">
+
+</script>
+
+<style scoped>
+
+</style>

@@ -6,4 +6,10 @@ export default antfu({
         indent: 4, // 4, or 'tab'
         quotes: 'single', // or 'double'
     },
+    vue: {
+        overrides: {
+            'vue/block-order': ['error', { order: ['template', 'script', 'style'],
+            }],
+        },
+    },
 })
