@@ -7,12 +7,3 @@
 
 <script setup lang="ts">
 </script>
-
-<style module lang="scss">
-.header {
-    margin-bottom: 30px;
-    height: 30px;
-    color: #407fff;
-    font-weight: 500;
-}
-</style>
