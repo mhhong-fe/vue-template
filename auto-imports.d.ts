@@ -12,10 +12,13 @@ declare global {
   const $ref: typeof import('vue/macros')['$ref']
   const $shallowRef: typeof import('vue/macros')['$shallowRef']
   const $toRef: typeof import('vue/macros')['$toRef']
+  const API_GET_BIND_CHANNEL_LIST_V2: typeof import('./src/api/config/settle')['API_GET_BIND_CHANNEL_LIST_V2']
+  const API_GET_RULE_DETAIL_BY_ID_V2: typeof import('./src/api/config/settle')['API_GET_RULE_DETAIL_BY_ID_V2']
   const BizTypeEnum: typeof import('./src/enums/settle')['BizTypeEnum']
   const EffectScope: typeof import('vue')['EffectScope']
   const ElMessage: typeof import('element-plus/es')['ElMessage']
   const acceptHMRUpdate: typeof import('pinia')['acceptHMRUpdate']
+  const axiosIns: typeof import('./src/api/index')['axiosIns']
   const centToYuan: typeof import('./src/utils/index')['centToYuan']
   const computed: typeof import('vue')['computed']
   const createApp: typeof import('vue')['createApp']
@@ -62,6 +65,7 @@ declare global {
   const reactive: typeof import('vue')['reactive']
   const readonly: typeof import('vue')['readonly']
   const ref: typeof import('vue')['ref']
+  const request: typeof import('./src/api/index')['request']
   const resolveComponent: typeof import('vue')['resolveComponent']
   const setActivePinia: typeof import('pinia')['setActivePinia']
   const setMapStoreSuffix: typeof import('pinia')['setMapStoreSuffix']
@@ -107,9 +111,13 @@ declare module 'vue' {
     readonly $ref: UnwrapRef<typeof import('vue/macros')['$ref']>
     readonly $shallowRef: UnwrapRef<typeof import('vue/macros')['$shallowRef']>
     readonly $toRef: UnwrapRef<typeof import('vue/macros')['$toRef']>
+    readonly API_GET_BIND_CHANNEL_LIST_V2: UnwrapRef<typeof import('./src/api/config/settle')['API_GET_BIND_CHANNEL_LIST_V2']>
+    readonly API_GET_RULE_DETAIL_BY_ID_V2: UnwrapRef<typeof import('./src/api/config/settle')['API_GET_RULE_DETAIL_BY_ID_V2']>
     readonly BizTypeEnum: UnwrapRef<typeof import('./src/enums/settle')['BizTypeEnum']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
+    readonly ElMessage: UnwrapRef<typeof import('element-plus/es')['ElMessage']>
     readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
+    readonly axiosIns: UnwrapRef<typeof import('./src/api/index')['axiosIns']>
     readonly centToYuan: UnwrapRef<typeof import('./src/utils/index')['centToYuan']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
     readonly createApp: UnwrapRef<typeof import('vue')['createApp']>
@@ -154,6 +162,7 @@ declare module 'vue' {
     readonly reactive: UnwrapRef<typeof import('vue')['reactive']>
     readonly readonly: UnwrapRef<typeof import('vue')['readonly']>
     readonly ref: UnwrapRef<typeof import('vue')['ref']>
+    readonly request: UnwrapRef<typeof import('./src/api/index')['request']>
     readonly resolveComponent: UnwrapRef<typeof import('vue')['resolveComponent']>
     readonly setActivePinia: UnwrapRef<typeof import('pinia')['setActivePinia']>
     readonly setMapStoreSuffix: UnwrapRef<typeof import('pinia')['setMapStoreSuffix']>
@@ -190,9 +199,13 @@ declare module '@vue/runtime-core' {
     readonly $ref: UnwrapRef<typeof import('vue/macros')['$ref']>
     readonly $shallowRef: UnwrapRef<typeof import('vue/macros')['$shallowRef']>
     readonly $toRef: UnwrapRef<typeof import('vue/macros')['$toRef']>
+    readonly API_GET_BIND_CHANNEL_LIST_V2: UnwrapRef<typeof import('./src/api/config/settle')['API_GET_BIND_CHANNEL_LIST_V2']>
+    readonly API_GET_RULE_DETAIL_BY_ID_V2: UnwrapRef<typeof import('./src/api/config/settle')['API_GET_RULE_DETAIL_BY_ID_V2']>
     readonly BizTypeEnum: UnwrapRef<typeof import('./src/enums/settle')['BizTypeEnum']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
+    readonly ElMessage: UnwrapRef<typeof import('element-plus/es')['ElMessage']>
     readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
+    readonly axiosIns: UnwrapRef<typeof import('./src/api/index')['axiosIns']>
     readonly centToYuan: UnwrapRef<typeof import('./src/utils/index')['centToYuan']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
     readonly createApp: UnwrapRef<typeof import('vue')['createApp']>
@@ -237,6 +250,7 @@ declare module '@vue/runtime-core' {
     readonly reactive: UnwrapRef<typeof import('vue')['reactive']>
     readonly readonly: UnwrapRef<typeof import('vue')['readonly']>
     readonly ref: UnwrapRef<typeof import('vue')['ref']>
+    readonly request: UnwrapRef<typeof import('./src/api/index')['request']>
     readonly resolveComponent: UnwrapRef<typeof import('vue')['resolveComponent']>
     readonly setActivePinia: UnwrapRef<typeof import('pinia')['setActivePinia']>
     readonly setMapStoreSuffix: UnwrapRef<typeof import('pinia')['setMapStoreSuffix']>
