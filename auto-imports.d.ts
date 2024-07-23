@@ -115,7 +115,6 @@ declare module 'vue' {
     readonly API_GET_RULE_DETAIL_BY_ID_V2: UnwrapRef<typeof import('./src/api/config/settle')['API_GET_RULE_DETAIL_BY_ID_V2']>
     readonly BizTypeEnum: UnwrapRef<typeof import('./src/enums/settle')['BizTypeEnum']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
-    readonly ElMessage: UnwrapRef<typeof import('element-plus/es')['ElMessage']>
     readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
     readonly axiosIns: UnwrapRef<typeof import('./src/api/index')['axiosIns']>
     readonly centToYuan: UnwrapRef<typeof import('./src/utils/index')['centToYuan']>
@@ -203,7 +202,6 @@ declare module '@vue/runtime-core' {
     readonly API_GET_RULE_DETAIL_BY_ID_V2: UnwrapRef<typeof import('./src/api/config/settle')['API_GET_RULE_DETAIL_BY_ID_V2']>
     readonly BizTypeEnum: UnwrapRef<typeof import('./src/enums/settle')['BizTypeEnum']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
-    readonly ElMessage: UnwrapRef<typeof import('element-plus/es')['ElMessage']>
     readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
     readonly axiosIns: UnwrapRef<typeof import('./src/api/index')['axiosIns']>
     readonly centToYuan: UnwrapRef<typeof import('./src/utils/index')['centToYuan']>
