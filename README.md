@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# vue-template
-基于Vue3+Vite的项目模版
-=======
 # 特性
 
 -   ⚡️ Vue 3, Vite, pnpm, esbuild - born with fastness
@@ -23,4 +19,3 @@
 - [ ] 在 `vite.config.ts` 更改 server.port
 - [ ] 在 `vite.config.ts` 更改 VITE_PLUGIN_SENTRY_CONFIG_DSN
 - [ ] 整理 README 并删除路由
->>>>>>> 8158ce18dcf9e390adc3185be08f1186704ce16d
