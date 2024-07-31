@@ -1,7 +1,7 @@
 <template>
     <div>
         <el-button type="primary" @click="handleClick">
-            axios
+            axios请求
         </el-button>
     </div>
 </template>

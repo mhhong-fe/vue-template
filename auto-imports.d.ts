@@ -98,6 +98,9 @@ declare global {
   // @ts-ignore
   export type { Component, ComponentPublicInstance, ComputedRef, ExtractDefaultPropTypes, ExtractPropTypes, ExtractPublicPropTypes, InjectionKey, PropType, Ref, VNode, WritableComputedRef } from 'vue'
   import('vue')
+  // @ts-ignore
+  export type { BizTypeEnum } from './src/enums/settle'
+  import('./src/enums/settle')
 }
 // for vue template auto import
 import { UnwrapRef } from 'vue'
@@ -115,7 +118,6 @@ declare module 'vue' {
     readonly API_GET_RULE_DETAIL_BY_ID_V2: UnwrapRef<typeof import('./src/api/config/settle')['API_GET_RULE_DETAIL_BY_ID_V2']>
     readonly BizTypeEnum: UnwrapRef<typeof import('./src/enums/settle')['BizTypeEnum']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
-    readonly ElMessage: UnwrapRef<typeof import('element-plus/es')['ElMessage']>
     readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
     readonly axiosIns: UnwrapRef<typeof import('./src/api/index')['axiosIns']>
     readonly centToYuan: UnwrapRef<typeof import('./src/utils/index')['centToYuan']>
@@ -203,7 +205,6 @@ declare module '@vue/runtime-core' {
     readonly API_GET_RULE_DETAIL_BY_ID_V2: UnwrapRef<typeof import('./src/api/config/settle')['API_GET_RULE_DETAIL_BY_ID_V2']>
     readonly BizTypeEnum: UnwrapRef<typeof import('./src/enums/settle')['BizTypeEnum']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
-    readonly ElMessage: UnwrapRef<typeof import('element-plus/es')['ElMessage']>
     readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
     readonly axiosIns: UnwrapRef<typeof import('./src/api/index')['axiosIns']>
     readonly centToYuan: UnwrapRef<typeof import('./src/utils/index')['centToYuan']>
