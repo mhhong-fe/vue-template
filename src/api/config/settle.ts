@@ -26,7 +26,7 @@ export function API_GET_BIND_CHANNEL_LIST_V2(
     data: GetBindChannelPayload,
 ): ARC<CommonResponseData<BindChannelProviderListItem[]>> {
     return {
-        url: '/sn/settle/pubRegionSettle/rule/v2/queryBindBizDetailByRuleId',
+        url: 'api/sn/settle/pubRegionSettle/rule/v2/queryBindBizDetailByRuleId',
         data,
         method: 'post',
     };
