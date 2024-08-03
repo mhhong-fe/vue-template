@@ -1,6 +1,9 @@
 # 使用官方 Node.js 镜像作为基础镜像
 FROM node:18.20.3-alpine
 
+# 设置淘宝镜像源
+npm config set registry https://registry.npmmirror.com
+
 # 使用npm
 RUN npm i pnpm@8.9.2 -g
 
